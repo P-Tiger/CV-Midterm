@@ -49,7 +49,6 @@ function handleClickRows(objDataCourse, totalRows) {
     $("#table #tbody").on("click", "tr", function () {
         let id = $(this).find('th:first').text();
         let indexDataCourse = findIndexData(objDataCourse, totalRows, id);
-        console.log(indexDataCourse)
         if ($.isNumeric(id)) {
             if (($('#sub_' + id).length) == 0) {
                 let tmp = $("<tr class= 'sub' id='sub_" + id + "'><th colspan='2'><p>Description: " + objDataCourse[indexDataCourse].value.description + "<br><br>Textbook: " + objDataCourse[indexDataCourse].value.textbook + "</p></th></tr>");
