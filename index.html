@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="jquery-3.5.0.js"></script>
+    <script src="main.js"></script>
+    <title>Resume</title>
+  </head>
+  <body>
+    <div class="grid wide">
+      <h3 class="title">RESUME</h3>
+      <div class="row sm-gutter">
+        <div class="col l-4 m-5 c-12">
+          <div class="wrapper scroll">
+            <h3>ABOUT ME</h3>
+            <hr />
+            <div class="wrapper__img">
+              <img src="avatar.png" alt="profile picture" />
+            </div>
+            <div class="wrapper__info">
+              <p>NAME: Nguyen Thi A</p>
+              <p>AGE: 21</p>
+              <p>LOCATION: HCMC, Viet Nam</p>
+              <p>DEGREE: Bachelor</p>
+              <p>PHONE: 0113113113</p>
+              <p>EMAIL: dummy@students.tdtu.edu.vn</p>
+            </div>
+          </div>
+        </div>
+        <div class="col l-8 m-7 c-12">
+          <div class="wrapper container">
+            <div class="biography">
+              <div class="biography__title">
+                <h3>BIOGRAPHY</h3>
+              </div>
+              <hr />
+              <div class="biography__content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill__title">
+                <h3>SKILLS</h3>
+              </div>
+              <hr />
+              <div class="skill__content">
+                <ul class="skill__content-list">
+                  <li class="skill__content-item">
+                    Programming languages: C, C#, Java
+                  </li>
+                  <li class="skill__content-item">Databases: SQL Server</li>
+                  <li class="skill__content-item">Others: HTML</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="workExperience">
+              <div class="workExperience__title">
+                <h3>WORK EXPERIENCE</h3>
+              </div>
+              <hr />
+              <div class="workExperience__content">
+                <ul class="workExperience__content-list">
+                  <li class="workExperience__content-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </li>
+                  <li class="workExperience__content-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="education">
+              <div class="education__title">
+                <h3>EDUCATION</h3>
+              </div>
+              <hr />
+              <div class="education__content">
+                <ul class="education__content-list">
+                  <li class="education__content-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </li>
+                  <li class="education__content-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="activity">
+              <div class="activity__title">
+                <h3>EXTRACURRICULAR ACTIVITIES AND AWARDS</h3>
+              </div>
+              <div class="activity__content">
+                <hr />
+              </div>
+              <div class="activity__content">
+                <ul class="activity__content-list">
+                  <li class="activity__content-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </li>
+                  <li class="activity__content-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="course">
+              <div class="course__title">
+                <h3>Courses</h3>
+              </div>
+              <hr />
+              <div class="tableCourse">
+                <table id="table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>NAME</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tbody">
+                    <tr id="trLoading">
+                      <th colspan="2" id="loading">Loading...</th>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="pagination-container">
+                  <div id="pagination_message">
+                    <p></p>
+                  </div>
+                  <nav>
+                    <ul class="pagination2"></ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact">
+              <div class="contact__title">
+                <h3>CONTACT ME</h3>
+              </div>
+
+              <hr />
+              <div class="contact__content">
+                <form>
+                  <label>YOUR EMAIL:</label><br />
+                  <input
+                    class="input"
+                    type="text"
+                    name="email"
+                    placeholder="Enter Email"
+                  />
+                  <br />
+                  <label>YOUR MESSAGE:</label><br />
+                  <textarea
+                    class="textarea"
+                    name="message"
+                    placeholder="Enter Message"
+                  ></textarea>
+                  <br />
+                  <input
+                    class="btn"
+                    type="submit"
+                    name="submit"
+                    value="Send Message"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; Copyright 2020. All rights reserved.</p>
+    </div>
+  </body>
+</html>
