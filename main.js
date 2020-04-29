@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-    $.get("http://demo6370041.mockable.io/getcourses", function (data, status) {
+    $.get("https://demo6370041.mockable.io/getcourses", function (data, status) {
         if (status === "success") {
             $('#trLoading').remove();
             let courses = data.data;
@@ -24,7 +24,7 @@ function loadDataDescription() {
     let totalRows = $("#tbody tr").length;
     let objDataCourse = [];
     for (let index = 1; index <= totalRows; index++) {
-        $.get("http://demo6370041.mockable.io/course/" + index, function (dataCourse, status) {
+        $.get("https://demo6370041.mockable.io/course/" + index, function (dataCourse, status) {
             if (status === "success") {
                 objDataCourse.push({
                     key: index,
